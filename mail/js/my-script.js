@@ -20,5 +20,5 @@ for (let i = 0; i < emails.length; i++) {
     } else {
         console.log(`L'email non è presente nel nostro database`);
     }
-    console.log(userEmail, emails[i])
+    console.log(userEmail, emails[i]);
 }
