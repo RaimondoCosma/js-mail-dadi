@@ -21,13 +21,14 @@ triggerBtn.addEventListener('click', function() {
     const inputEmail = document.getElementById('input-email');
     const warning = document.querySelector('.warning-email');
     warning.innerHTML = `<span style="color: red;">L'email non è presente nel nostro database</span>`;
+    inputEmail.classList.add('shake');
     for (let i = 0; i < emails.length; i++) {
         if ( userEmail === emails[i]) {
             warning.innerHTML = `<span style="color: green;">L'email è valida</span>`;
             warning.classList.add('show');
+            inputEmail.classList.remove('shake');
         } else {
             warning.classList.add('show');
-            inputEmail.classList.add('shake');
         }
     }
 });
