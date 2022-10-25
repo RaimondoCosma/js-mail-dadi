@@ -12,3 +12,13 @@ const emails = ['raimondo@gmail.com', 'roberto@gmail.com', 'alfredo@gmail.com', 
 
 // 2. hiedo all'utente di inserire la sua email
 const userEmail = prompt('Inserisci la tua email:')
+
+// 3. Pongo le condizioni di verifica
+for (let i = 0; i < emails.length; i++) {
+    if ( userEmail === emails[i]) {
+        alert(`L'email è valida`);
+    } else {
+        console.log(`L'email non è presente nel nostro database`);
+    }
+    console.log(userEmail, emails[i])
+}
