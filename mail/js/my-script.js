@@ -27,9 +27,12 @@ triggerBtn.addEventListener('click', function() {
             warning.innerHTML = `<span style="color: green;">L'email è valida</span>`;
             warning.classList.add('show');
             inputEmail.classList.remove('shake');
+            console.log(`L'email è valida`);
         } else {
-            warning.classList.add('show');
+            warning.classList.add('warning-email-show');
+            console.log(`L'email non è presente nel nostro database`);
         }
+        console.log(userEmail, emails[i]);
     }
 });
 // 3. Pongo le condizioni di verifica
