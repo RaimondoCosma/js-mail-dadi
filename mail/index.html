@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <form class="my-form">
+        <div class="form-container">
+            <div class="email">
+                <label class="label-email" for="user-email">Inserisci Email</label>
+                <div id="input-email"><input id="user-email" name="user-email" placeholder="Inserisci Email" type="text"></div>
+                <label for="user-email" class="warning-email">Attenzione! Inserire una giusta email</label>
+            </div>
+        </div>
+        <button id="btn-trigger" class="btn c-pointer" type="button">Invia</button>
+    </form>
     <script src="js/my-script.js"></script>
 </body>
 </html>

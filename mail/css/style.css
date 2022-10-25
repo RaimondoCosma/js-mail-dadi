@@ -1,0 +1,71 @@
+/* -------------------------
+    RESET   
+------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------
+    COMMON   
+------------------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.label-email {
+    font-size: 1.5rem;
+}
+#input-email {
+    margin-top: .625rem;
+}
+#user-email {
+    padding: .1875rem .3125rem;
+    width: 100%;
+}
+.btn {
+    padding: .3125rem .625rem;
+    margin-top: .625rem;
+}
+.warning-email {
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+    animation: zoom-in 0.4s cubic-bezier(.13,.66,.57,1.67);
+}
+.shake {
+    animation: shake 0.4s linear;
+}
+/* -------------------
+    KEYFRAME    
+------------------- */
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+    
+@keyframes zoom-in {
+    from {
+        transform: scale(0.1);
+        filter: grayscale(1);
+    }
+    to {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
