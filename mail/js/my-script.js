@@ -29,18 +29,26 @@ triggerBtn.addEventListener('click', function() {
             inputEmail.classList.remove('shake');
             console.log(`L'email è valida`);
         } else {
-            warning.classList.add('warning-email-show');
-            console.log(`L'email non è presente nel nostro database`);
+            warning.classList.add('warning-email-show'); 
+            console.log(`L'email non è presente nel nostro database`);  // Attenzione ad inserire gli else nel ciclo for
         }
         console.log(userEmail, emails[i]);
     }
 });
+
+// SOLUZIONE POST CORREZIONE
+
 // 3. Pongo le condizioni di verifica
+// Imposto variabile falsa per trovare l'email dentro l'array
+// let found = false
 // for (let i = 0; i < emails.length; i++) {
 //     if ( userEmail === emails[i]) {
-//         alert(`L'email è valida`);
-//     } else {
-//         console.log(`L'email non è presente nel nostro database`);
-//     }
-//     console.log(userEmail, emails[i]);
+//         found = true;
+//      break;           // Il break mi interrompe il ciclo una volta che la condizione è vera
+// }
+
+// if ( found ) {
+//     alert('Email trovata');
+// } else {
+//     alert('Email non presente');
 // }
